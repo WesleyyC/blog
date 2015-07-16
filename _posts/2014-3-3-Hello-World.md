@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "You're up and running!"
+title: "{AI}The Intelligent Machine"
 published: true
 ---
-
-# The Intelligent Machine
 
 Doing research in AI and create intelligent is my dream career. But can we really achieve a reall AI and actually understand what is an AI?
 
