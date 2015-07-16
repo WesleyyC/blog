@@ -20,3 +20,5 @@ OR
 
 Do we really need to copy human brain? Is there other kinds of intelligence? Or do we really need the true intelligence, or we just need a intelligent machine working like a personal secretary?
 
+
+P.S. MY FISRT BLOG POST!!!!
