@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "{AI}The Intelligent Machine"
+title: "{AI} The Intelligent Machine"
 published: true
 ---
 
-Doing research in AI and create intelligent is my dream career. But can we really achieve a reall AI and actually understand what is an AI?
+![Escher's Artificial Intelligence Machine](https://raw.githubusercontent.com/WesleyyC/wesleyyc.github.io/master/images/escher_avatar.jpg)
+
+Doing research in AI and create intelligent is my dream career and that's why I choose to go far a dual degree in computer science and neurosciece. But can we really achieve a reall AI and actually understand what is an AI? I am not sure, and that's why AI is so interesting. While it is very technical, it is also very philosophical.
 
 In the current literature, most of the AI is weak AI depends on conditioning and a set of rules. Even in machine learning, the model is designed to handle the condition value automatically with a prefix structure. In the end of the day, AI in current stage cannot do something that it is not designed to do, in other words, they cannot develop themselves into other domain.
 
@@ -15,8 +17,6 @@ What if human's thoughts are just like program, the way we design AI right now? 
 If not, can human really understand their cognitive process/program and transplant it to machine? 
 
 OR
-
-![Escher's Artificial Intelligence Machine]({{site.baseurl}}/https://raw.githubusercontent.com/WesleyyC/wesleyyc.github.io/master/images/escher_avatar.jpg)
 
 Do we really need to copy human brain? Is there other kinds of intelligence? Or do we really need the true intelligence, or we just need a intelligent machine working like a personal secretary?
 
