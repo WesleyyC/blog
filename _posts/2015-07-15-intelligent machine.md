@@ -4,7 +4,7 @@ title: "{AI} The Intelligent Machine"
 published: true
 ---
 
-![Escher's Artificial Intelligence Machine](https://raw.githubusercontent.com/WesleyyC/wesleyyc.github.io/master/images/escher_avatar.jpg)
+![Escher's Artificial Intelligence Machine](https://raw.githubusercontent.com/WesleyyC/blog/master/images/escher_avatar.jpg)
 
 Doing research in AI and create intelligent is my dream career and that's why I choose to go far a dual degree in computer science and neurosciece. But can we really achieve a reall AI and actually understand what is an AI? I am not sure, and that's why AI is so interesting. While it is very technical, it is also very philosophical.
 
