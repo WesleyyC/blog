@@ -54,13 +54,14 @@ First, you can start personalize the website by changing the titile/ subtitle/ a
 Then you can go into the _layouts folder and opens up the default.html file.
 
 ```HTML
+	<!--liquid signs are remove-->
 	<body>
-		{% include header.html %}
-		{% include about.html %}
-		{% include page_content.html %}
-		{% include contact.html %}
-		{% include footer.html %}
-		{% include js.html %}
+		include header.html
+		include about.html		
+		include page_content.html 
+		include contact.html
+		include footer.html
+		include js.html 
 	</body>
 ```
 
@@ -74,9 +75,10 @@ But there is one thing we haven't talked about, is the page_content file. This f
 ```HTML
 <section id="services">
 <!-- Page Content -->
-{% for post in site.posts reversed %}
-  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-    {% if thecycle == 'odd' %}
+<!--liquid signs are remove-->
+for post in site.posts reversed 
+  capture thecycle | cycle 'odd', 'even' | endcapture 
+     if thecycle == 'odd' 
 
 ```
 
@@ -96,13 +98,14 @@ description: |
 ---
   A special thanks to [Death to the Stock Photo](http://join.deathtothestockphoto.com/) for providing the photographs that you see in this template.  Visit their website to become a member!
   
+  
 ```
 
 in the lines between ```---```, we can see there are some properteis are defined. For example, which category this posts belonged (experiences, projects, educations?), what images are associated with it, what title is it, etc.
 
 But how do we access this information? Let's look at the HTML file,
 
-```
+```HTML
 <div class="col-lg-5 col-sm-6">
 	<hr class="section-heading-spacer">
 	<div class="clearfix"></div>
@@ -114,7 +117,7 @@ But how do we access this information? Let's look at the HTML file,
 </div>
 ```
 
-as we can see, we can access the content (anything below the ```---```) and the file properties by simply calling ```{{post.SOMETHING}}``` and we can then cooporate our content with our html/css layout.
+as we can see, we can access the content (anything below the ```---```) and the file properties by simply calling ```{{post.SOMETHING}}``` and we can then cooporate our content with our html/css layout, and to access the image, we just go to the img/services folder and find the image with the right name associated with the post.
 
 One minor thing on the markdown file, since Jekyll is designed to populate blogs instead of personal info, its markdown file names has to format like YEAR-MONTH-DAY-FILENAME, so if you will still need to meet to format even though your markdown file is your resume content instead of blogs.
 
