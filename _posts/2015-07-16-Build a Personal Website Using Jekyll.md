@@ -1,4 +1,6 @@
 ---
+layout: post
+title: "{TOOL}Build a Personal Website Using Jekyll"
 published: true
 ---
 
