@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "{TOOL}Build a Personal Website Using Jekyll Blog Framework"
+title: "TOOL: Build a Personal Website Using Jekyll Blog Framework"
 published: true
 ---
 
@@ -9,7 +9,7 @@ I was wandering at Github last night at around eight and I saw Kahlil forked a p
 
 ![Personal Website](https://raw.githubusercontent.com/WesleyyC/blog/gh-pages/images/personal_site_screenshot.png)
 
-It is originally designed to create blog site, but with some creativity, I make it a personal website ;P
+It is originally designed to create blog site, but with some creativity, we can make it a personal website ;P
 
 ### I. So what is Jekyll?
 
@@ -54,7 +54,7 @@ First, you can start personalize the website by changing the titile/ subtitle/ a
 Then you can go into the _layouts folder and opens up the default.html file.
 
 ```HTML
-	<!--liquid signs are remove-->
+	<!--liquid signs are removed for parsing-->
 	<body>
 		include header.html
 		include about.html		
@@ -75,7 +75,7 @@ But there is one thing we haven't talked about, is the page_content file. This f
 ```HTML
 <section id="services">
 <!-- Page Content -->
-<!--liquid signs are remove-->
+<!--liquid signs are removed for parsing-->
 for post in site.posts reversed 
   capture thecycle | cycle 'odd', 'even' | endcapture 
      if thecycle == 'odd' 

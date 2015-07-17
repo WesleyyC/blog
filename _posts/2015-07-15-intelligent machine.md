@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "{AI} The Intelligent Machine"
+title: "AI: The Intelligent Machine"
 published: true
 ---
 
