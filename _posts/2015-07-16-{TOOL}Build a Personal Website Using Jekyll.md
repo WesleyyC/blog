@@ -13,5 +13,13 @@ I. So what is Jekyll?
 We loved with a love that was more than love
 
 Basically, Jekyll is a static webpage server. But it is special in two things:
-- It is not 
-- item
+- It is not a traditional HTML/CSS/JavaScript framework as your data is not populated by direct JavaScript command. Instead, your data is stored in a Markdown file with simple tag and then you use Liquid templates to populate the content in the Markdown files.
+- Since Jekyll is supported by Github repo, you don't need to get a dedicated server for your personal page. Instead, you can simply use github.io to serve your jekyll sites.
+
+II. Install Jekyll
+
+If you are running Mac OSX, where Ruby should be already installed, you can simply do 
+	gem install jekyll
+in your terminal window and Jekyll will be installed automatically.
+
+
