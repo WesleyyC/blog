@@ -3,10 +3,9 @@ layout: post
 title: "AI: The Intelligent Machine"
 published: true
 ---
+I have watched a lot of AI theme movie/series lately and some interesting questions are raised. For example, can we really achieve a reall AI? or what is an AI? I am not sure, and that's why AI is so interesting. While it is very technical, it is also very philosophical.
 
 ![Escher's Artificial Intelligence Machine](https://raw.githubusercontent.com/WesleyyC/blog/gh-pages/images/escher_avatar.jpg)
-
-I have watched a lot of AI theme movie/series lately and some interesting questions are raised. For example, can we really achieve a reall AI? or what is an AI? I am not sure, and that's why AI is so interesting. While it is very technical, it is also very philosophical.
 
 In the current literature, most of the AI is weak AI depends on conditioning and a set of rules. Even in machine learning, the model is designed to handle the condition value automatically with a prefix structure. In the end of the day, AI in current stage cannot do something that it is not designed to do, in other words, they cannot develop themselves into other domain.
 
