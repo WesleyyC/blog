@@ -35,10 +35,10 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
-  margin-top:130px;
-  @include mobile {
-     margin-top:230px;
+  @media only screen and (min-width: 760px) {
+      margin-top:130px;
   }
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -163,11 +163,13 @@ img {
 
 .wrapper-masthead {
     margin-bottom: 50px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background:white;
-    z-index: 1;
+    @media only screen and (min-width: 760px) {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background:white;
+        z-index: 1;
+    }
 }
 
 .masthead {
