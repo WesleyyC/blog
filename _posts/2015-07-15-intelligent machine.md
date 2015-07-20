@@ -1,8 +1,12 @@
 ---
+
 layout: post
+
 title: "AI: The Intelligent Machine"
+
 published: true
----
+---------------
+
 I have watched a lot of AI theme movie/series lately and some interesting questions are raised. For example, can we really achieve a reall AI? or what is an AI? I am not sure, and that's why AI is so interesting. While it is very technical, it is also very philosophical.
 
 ![Escher's Artificial Intelligence Machine](https://raw.githubusercontent.com/WesleyyC/blog/gh-pages/images/escher_avatar.jpg)
@@ -13,11 +17,10 @@ So people will say, why don't we just look at human's brain and see how that wor
 
 What if human's thoughts are just like program, the way we design AI right now? Can human understand the human programm itself? Similarly, can a program understand itself, what it does and how it does it -- some self aware. Can we write such function?
 
-If not, can human really understand their cognitive process/program and transplant it to machine? 
+If not, can human really understand their cognitive process/program and transplant it to machine?
 
 OR
 
 Do we really need to copy human brain? Is there other kinds of intelligence? Or do we really need the true intelligence, or we just need a intelligent machine working like a personal secretary?
-
 
 P.S. MY FISRT BLOG POST!!!!
