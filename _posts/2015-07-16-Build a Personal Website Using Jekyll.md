@@ -5,7 +5,7 @@ layout: post
 title: "Tool: Build a Personal Website Using Jekyll Blog Framework"
 
 published: true
----------------
+---
 
 I was wandering at Github last night at around eight and I saw Kahlil forked a project called [Jekyll-now](https://github.com/barryclark/jekyll-now). I clicked in it out of curiosity and 12 hours later, this is what I got.
 

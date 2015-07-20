@@ -5,7 +5,7 @@ layout: post
 title: "AI: The Intelligent Machine"
 
 published: true
----------------
+---
 
 I have watched a lot of AI theme movie/series lately and some interesting questions are raised. For example, can we really achieve a reall AI? or what is an AI? I am not sure, and that's why AI is so interesting. While it is very technical, it is also very philosophical.
 
