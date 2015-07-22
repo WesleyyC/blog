@@ -9,11 +9,15 @@ title: "ML: Machine Learning and Human Learning"
 published: true
 ---
 
+What if we train machine learning models just like training babies?
+
+![human-learn](https://raw.githubusercontent.com/WesleyyC/blog/gh-pages/images/human-learn.jpg)
+
 ####Intro
 
 I read [an interesting comment](http://zhi.hu/o889) today about the "notorious" overfitting problem in machine learning and the author describes an "overfitted" model as a student who try too hard to learn from the presented learning material and start to believe the some material that is not necessarily true.
 
-![The Interesting Book Write](https://raw.githubusercontent.com/WesleyyC/blog/gh-pages/images/machine-learn.png)
+![machine-learn](https://raw.githubusercontent.com/WesleyyC/blog/gh-pages/images/machine-learn.png)
 
 I found this comment particularly interesting. Not just because it is funny, but also because it reveals a fundamental relationship between machine learning and human learning. For too long, we have been thinking about machine learning model as a statistical model, but thinking of training model as training students can be very helpful. And I think that is partially why "Deep Learning", the recent head-line machine learning technique, can be so successful.
 
@@ -43,7 +47,7 @@ In machine learning, seeing more means more sample data. To train a good model, 
 
 I love professors who are willing to prepare practice exams even though memorizing every single questions in the practice exam will NOT get you anywhere. I think a good approach for studying practice exam is just getting a basic understanding of what will be in the exam and how hard the exam will be. Moreover, I would like to get a feel on how the professor will test on a specific topic, and what will be the best approach for questions on this kind of topic. So, instead of learning the detail of the practice exam, grepping a general idea from the practice exam can be more helpful.
 
-If we think of the training sample in machine learning just as practice exam, and doing sample exam as training a model, the same spirit applies too. If the machine just memorize every single questions (data point) from the practice exam (training data set), it will be overfitting the training data set (just like the 3rd pics in the image above!). Even though the model score 100 points in its sample exam, memorizing every single exam will probably not able to help it pass the actual test (test sample).
+If we think of the training sample in machine learning just as practice exam, and doing sample exam as training a model, the same spirit applies too. If the machine just memorize every single questions (data point) from the practice exam (training data set), it will be overfitting the training data set (just like the overfitting sample above!). Even though the model score 100 points in its sample exam, memorizing every single exam will probably not able to help it pass the actual test (test sample).
 
 ####Conclusion
 
