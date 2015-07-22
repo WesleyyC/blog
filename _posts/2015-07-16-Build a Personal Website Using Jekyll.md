@@ -2,6 +2,8 @@
 
 layout: post
 
+label: "tool"
+
 title: "Tool: Build a Personal Website Using Jekyll Blog Framework"
 
 published: true

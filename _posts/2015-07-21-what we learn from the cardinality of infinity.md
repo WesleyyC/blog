@@ -2,6 +2,8 @@
 
 layout: post
 
+label: "math"
+
 title: "Math: What We Learn from the Cardinality of Infinity?"
 
 published: true
@@ -12,7 +14,7 @@ I took a math proof class last semester and we spend a huge chunk of time talkin
 Infinity is mysterious yet beautiful and that’s probably why people seem to like the infinity symbol very much for the representation of love. People always want more.
 
 Then I watched a very moving love story today called "The Fault in Our Stars”. It is about the love between two dying people. The play writing is amazing and the screen shoot is also very good. But what I found enlighten is a very short quote from an interesting book writer:
-“Some infinities are bigger than other infinities.” 
+“Some infinities are bigger than other infinities.”
 
 ![The Interesting Book Write](https://raw.githubusercontent.com/WesleyyC/blog/gh-pages/images/infinity.png)
 

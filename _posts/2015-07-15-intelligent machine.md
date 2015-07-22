@@ -2,6 +2,8 @@
 
 layout: post
 
+label: "ai"
+
 title: "AI: The Intelligent Machine"
 
 published: true
