@@ -9,6 +9,8 @@ title: "TOOL: Parse for Android Development and the Increasing Layers of Abstrac
 published: true
 ---
 
+Build an Android Application with backend database service in 2 days!
+
 #### Intro
 
 Building backend server and database can be a lot of work in the old day. Even with package like Node.js, build up API for database can be unpleasant. Moreover, for mobile application, "back threading" the internet calls and manage them in weak signal condition can be pains in the ass.
