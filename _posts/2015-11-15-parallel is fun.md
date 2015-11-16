@@ -9,62 +9,34 @@ title: "ML: My First with Parallel Computing"
 published: true
 ---
 
-Parallel computing is very dcifferent, yet super fun!
+Parallel computing is fun, but quiet different!
 
 #### Intro
 
-Building backend server and database can be a lot of work in the old day. Even with package like Node.js, build up API for database can be unpleasant. Moreover, for mobile application, "back threading" the internet calls and manage them in weak signal condition can be pains in the ass.
+“Big data is like teenage sex: everyone talks about it, nobody really knows how to do it, everyone thinks everyone else is doing it, so everyone claims they are doing it…” — Dan Ariely
 
-However, in the past month, I have built two Android applications with server database and server calls handled properly. These are made possible by a service called Parse.
+And the same quote can apply to many other related terms with big data like machine learning, deep learning, data visualization and parallel computing. Fortunately, I did get a chance to **do** one of them recently. 
 
-![parse](https://raw.githubusercontent.com/WesleyyC/blog/gh-pages/images/parse.png)
+#### How I Get Into This Whole Paralel Computing Business?
 
-Parse is a backend service developed by Facebook for Android/iOS/Web developer to build their database, monitor service status and "cloud" their code.
+Over the pass summer, I have been doing some research and implement an approximate agorithm for efficient graph matching. Utilizing this algorithm, I later developed a spatial pattern matching model following the research of my mentor Prof. Hong.
 
-#### Parse with Android Development
+Even though the graph matching runs relatively fast, it still takes about 30 mins to match two graphs with about 100 nodes and such matching needs to run several round in our model develop algorithm. As bad as it sounds, we were actually quiet happy with our progress at that point and we were able to demonstrate the viability of our model through small samples. 
 
-With the documentation on Parse, it is very easy get started with the Parse backend and the SDK is well documented so it is very handy and I am not going to go over it here. However, I do want to high highlight some useful features:
+I mean, every computer science problem is not a problem until we need to scale.
 
-##### Query Adapter
+#### But,
 
-In android development, if you have a list of items want to display, for instance a list of contacts information, you can use something called adapter where you can bind your data to the UI element
+Going into this fall, we decided to apply the algorithm to biology domain and aim to solve a facinating yet challenging probelm: generate a model to learn the common domain across all the sample proteins. We convert sample protein crystal structures into graphs and hope to understand the common structure in this sample protein utilizing our algorithm. This is a fascinating job. I mean, look at this beautiful matching graph:
 
-Traditionally, what I would have done is make a server call to get the data I want to display and then bind the data to the view in the adapter. This will involve building my own adapter and manage all the server call.
+![p-compute-1](https://raw.githubusercontent.com/WesleyyC/blog/gh-pages/images/p-compute-1.png)
 
-However, in the Parse SDK, there is something called Query Adapter where you can simply create a server database query and make a query adapter out of it so that you don't need to worry about managing the server calls. If you want to customize the binding activity, you can simply extend this query adapter and do whatever you want with the data.
+But we run into a problem: the scaling problem. Most of the proteins have hundreds of amino acids and give us a graph with hundreds of nodes. Therefore, we need to make our graph matching faster. Since the majority time for runing the graph matching algorithm is used to build a huge matrix storing the edge compatabiltiy between all the edges of two graphs. The work can be huge once we scale. Let's say we have a graph with A nodes and another graph with I ndoes. Then there will be at most A\*A edges in the first graph and I\*I edges in the later. Therefore we will need to compute a huge matrix with size (A\*A)\*(I\*I). That's a lot of work, but luckily the computing order does not matter, so we decide to try parallel computing.
 
+#### The Parallel Computing Toolbox in MATLAB
 
-##### Parse Image View
+MATLAB has this amazing parallel computing toolbox that can help you utilizing multiple CPU on your local machien or clusters to do parallel computing by simply change your `for` loop to `parfor` loop. That sounds pretty straight forward and that's what I thought when I first looked at the tutorial.
 
-If you want to display a image in our Android application, we can create a image view and bind an image to this view. If the image is on the server, we will need to download if from the server. Since image can be very large somtime, we will want to do the download in the back thread. However, since the image view binding is happening in the main thread, things get tricky very quickly.
-
-To help with that, Parse SDK has its own Image View where you can simply cast a normal Image View to parse Image View and bind your image query on this view. Then it will help you load the image in background and display it on the image view without dragging down your main thread activity.
-
-#### Why Parse?
-
-I think Parse is amazing because it helps developer, especially for start up, to focus more on building the application itself instead of spending a lot of time to build or manage their own database.
-
-Moreover, it is very easy to use since the Parse SDK introduce not just basic RESTful service but also some handy classes like Parse Image View and Parse Query Adapter which makes it super easy for us to integrate it with Android Development environment.
-
-#### The Idea of Abstraction
-
-As a kind of abstraction, Parse packages the whole backend "dirty" work and presents us a very clean and easy to use SDK. Therefore, without any knowledge in building database and server, a developer can have a backend for his/her application.
-
-In some sense, abstraction is the most important concept in computer science. Will first came up representation to abstract data, then we came up programming language that can abstract the computing process, after which we abstract a sequence of operation and call them functions, which we can operate again and again.
-
-So we love abstraction and that's why will come up object oriented programming where we can represent data and function in a very clean manner so that user does not need to know what is in the package.
-
-Following these ideas, we now have service like Parse and tons of API that help us create things that we actually know very little about. This allows us to build products and create features in a very effective way. Standing on giant's shoulder, we don't need to recreate the wheel anymore.
-
-It is very cool, but maybe a little scary?
+To Be Continued ...
 
 
-#### The "Problem"
-
-Today, many people are worried about the increasing layers of abstraction in computer science might train a new generation of computer scientist that has very little knowledge of the fundamental mechanism of computer.
-
-With Parse, students might be able to graduate with a CS degree without any database/server knowledge. Maybe in a very near feature, with more extra layers of abstraction, CS graduates might not need to know how to write code (people can already make games by dragging/linking modules without any coding).
-
-This sounds pretty mess up, but I think it comes with the nature of computer science, its nature of abstraction. Computer science is very much about problem solving and once you know how to solve the problem, you can use whatever tools you like. The increasing layers of abstraction is giving us better tools to solve problem but to come up with the solution has never change.
-
-So I probably will still take a database course and a network course, but I will keep using Parse without feeling guilty about not knowing what's going on underneath.
