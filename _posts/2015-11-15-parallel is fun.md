@@ -69,4 +69,4 @@ The first thing is how we organized our data structure. If we are using parallel
 
 Let's look at a matrix in Dijkstra Algorithm:
 
-![](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#/media/File:Dijkstras_progress_animation.gif)
+![p-compute-3](https://raw.githubusercontent.com/WesleyyC/blog/gh-pages/images/p-compute-3.gif)
