@@ -37,6 +37,36 @@ But we run into a problem: the scaling problem. Most of the proteins have hundre
 
 MATLAB has this amazing parallel computing toolbox that can help you utilizing multiple CPU on your local machien or clusters to do parallel computing by simply change your `for` loop to `parfor` loop. That sounds pretty straight forward and that's what I thought when I first looked at the tutorial.
 
-To Be Continued ...
+The complication in `parfor` is the way we can index our matrix is limited. Here are some legal case if we want to assign a value to our (A\*A)\*(I\*I) matrix C.
 
+```
+C(2,7)=1;
+C(p,5)=1;
+C(p,:)=1;
+```
+And here are some illegal case:
 
+```
+C(p,a)=1;	% a is some random variable
+C(p,p)=1;
+C(p,1:a)=1;
+C(p,1:p)=1;
+
+```
+So as you can see, to compute a matrix using parallel computation, MATLAB requires you to compute it by a whole row/column or just a constant cell.
+
+This sounds easy, but in many cases, it requires us to transform our representation or even conceputlization of the problem.
+
+In my case, I partition my (A\*A)\*(I\*I) matrix C into A\*I blocks and compute these blocks one by one using two nested `for` loop. However, I cannot do this in the new `parfoor` loop since we need to fill out the matrix with a whole row. I have a really hard time to conceptualize the process in the beginning as I think of my matrix as different blocks. Now that we need to partition the matrix by row, everything looks so different now and I am not sure how to conceptualize such process.
+
+I eventually sove this problem by drawing out the whole matrix and it is actually quiet simple. But I learn a lot from this process.
+
+#### Why parallel computing is fun? (And what I learn?)
+
+Since parallel computing is doing the computation in parallel it requires a different mindset compared to sequential computing.
+
+The first thing is how we organized our data structure. If we are using parallel toolbox/library, many of them require us to slice our variable in a column/row manner, just like in MATLAB. To deal with this, we might need to tweak the data structure in our algorithm and some times that can be counter intuitive.
+
+Let's look at a matrix in Dijkstra Algorithm:
+
+![](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#/media/File:Dijkstras_progress_animation.gif)
