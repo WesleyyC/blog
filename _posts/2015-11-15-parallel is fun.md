@@ -79,5 +79,7 @@ This sounds complicated, but with all the toolboxes out there, we are able to bu
 
 ![p-compute-2](https://raw.githubusercontent.com/WesleyyC/blog/gh-pages/images/p-compute-2.png)
 
-For me, MATLAB first start pooling "workers" for parallel computing works and this takes some time. Once the pooling is done in the first round, it only takes 0.2 seconds to finish a round of edges compatability computing, while the same process takes 84 seconds without parallel computing. Yay!
+For me, MATLAB first start pooling "workers" for parallel computing works and this takes some time. Once the pooling is done in the first round, it only takes 0.2 seconds to finish a round of edges compatability computing, while the same process takes 84 seconds without parallel computing. So I literally jump out of my bed when it actually works!
+
+And yep, I code on my bed too. :)
 
