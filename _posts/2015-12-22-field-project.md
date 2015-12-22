@@ -4,7 +4,7 @@ layout: post
 
 label: "se"
 
-title: "ML: A Product Managing Training"
+title: "SE: A Product Managing Training"
 
 published: true
 ---
