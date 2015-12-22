@@ -36,7 +36,7 @@ However, in the Parse SDK, there is something called Query Adapter where you can
 
 ##### Parse Image View
 
-If you want to display a image in our Android application, we can create a image view and bind an image to this view. If the image is on the server, we will need to download if from the server. Since image can be very large somtime, we will want to do the download in the back thread. However, since the image view binding is happening in the main thread, things get tricky very quickly.
+If you want to display an image in our Android application, we can create an image view and bind an image to this view. If the image is on the server, we will need to download if from the server. Since image can be very large sometime, we will want to do the download in the back thread. However, since the image view binding is happening in the main thread, things get tricky very quickly.
 
 To help with that, Parse SDK has its own Image View where you can simply cast a normal Image View to parse Image View and bind your image query on this view. Then it will help you load the image in background and display it on the image view without dragging down your main thread activity.
 
@@ -68,3 +68,4 @@ With Parse, students might be able to graduate with a CS degree without any data
 This sounds pretty mess up, but I think it comes with the nature of computer science, its nature of abstraction. Computer science is very much about problem solving and once you know how to solve the problem, you can use whatever tools you like. The increasing layers of abstraction is giving us better tools to solve problem but to come up with the solution has never change.
 
 So I probably will still take a database course and a network course, but I will keep using Parse without feeling guilty about not knowing what's going on underneath.
+
