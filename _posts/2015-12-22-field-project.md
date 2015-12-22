@@ -49,4 +49,4 @@ To answer such question, you will probably need years of experience and a very g
 
 When we are coming up ideas in our project, I started to do some coding as a proof of concept and learned a very valuable lesson, that is "how to locate the major technical difficulty behind an idea? what is the key technology to overcome the obstacle?" This thinking process is rare when I did programming assignment for classes because we know professor assign this project for a recent topic and we just need to implement that. Therefore, we don't really have enough training to answer a question like "design a X system to achieve Z" and I learn a lot about this in this field project.
 
-I used to be a hard-cored computer science student and think that product managing courses are not worth taking, but this tiny industry exposure says such courses are necessary and I highly recommended it.
+I used to think that product managing courses are not really worth taking, but it turns out that I love it, enjoyed it and highly recommend it.
